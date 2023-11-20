@@ -22,3 +22,42 @@
   --f-xs: #{u.rem(18)};
   --f-body: #{u.rem(15)};
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: min(u.rem(1110), calc(100% - u.rem(32)));
+  margin-inline: auto;
+}
