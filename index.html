@@ -13,17 +13,26 @@
     />
   </head>
   <body>
-    <header class="wrapper">
+    <header class="header wrapper">
       <a href="#">
-        <img src="/img/logo.svg" , width="64" , height="30" , alt="homepage" />
+        <img
+          class="header__logo"
+          src="/img/logo.svg"
+          ,
+          width="64"
+          ,
+          height="30"
+          ,
+          alt="homepage"
+        />
       </a>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">New</a></li>
-          <li><a href="">Popular</a></li>
-          <li><a href="">Trending</a></li>
-          <li><a href="">Categories</a></li>
+          <li><a class="header__links" href="">Home</a></li>
+          <li><a class="header__links" href="">New</a></li>
+          <li><a class="header__links" href="">Popular</a></li>
+          <li><a class="header__links" href="">Trending</a></li>
+          <li><a class="header__links" href="">Categories</a></li>
         </ul>
       </nav>
     </header>
@@ -34,12 +43,16 @@
             <source
               media="(min-width: 1024px)"
               srcset="img/feature-desktop.jpg 1x, img/feature-desktop-2x.jpg 2x"
+              width="730"
+              height="300"
             />
             <img
               class="feature__img"
               src="img/feature-mobile.jpg"
               alt="colorful blocks"
               srcset="img/feature-mobile-2x.jpg 2x"
+              width="343"
+              height="300"
             />
           </picture>
           <h1 class="feature__heading">The Bright Future of Web 3.0?</h1>

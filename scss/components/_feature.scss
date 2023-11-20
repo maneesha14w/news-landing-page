@@ -1,0 +1,13 @@
+@use "../util" as u;
+
+.feature {
+  &__img {
+  }
+  &__heading {
+    font-size: u.rem(40); // fallback for old browsers
+    font-size: var(--f-xl);
+    font-weight: 800;
+  }
+  &__btn {
+  }
+}

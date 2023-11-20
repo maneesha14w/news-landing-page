@@ -22,7 +22,6 @@
   --f-xs: #{u.rem(18)};
   --f-body: #{u.rem(15)};
 }
-
 html {
   box-sizing: border-box;
 }
@@ -50,14 +49,29 @@ h1,
 h2,
 h3,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   width: min(u.rem(1110), calc(100% - u.rem(32)));
   margin-inline: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
