@@ -37,12 +37,15 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   line-height: 1.7;
+  font-size: var(--f-body);
+  color: var(--c-gray);
 }
 
 h1,
 h2,
 h3 {
   line-height: 1.1;
+  color: var(--c-blue);
 }
 
 h1,

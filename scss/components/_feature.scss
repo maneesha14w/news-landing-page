@@ -9,5 +9,14 @@
     font-weight: 800;
   }
   &__btn {
+    display: inline-block;
+    background-color: var(--c-red);
+    color: var(--c-white);
+    padding: u.rem(12) u.rem(32);
+    letter-spacing: 0.31em;
+    font-weight: 700;
+    font-size: u.rem(14);
+    text-transform: uppercase;
+    cursor: pointer;
   }
 }
