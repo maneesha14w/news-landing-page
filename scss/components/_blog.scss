@@ -1,6 +1,14 @@
 @use "../util" as u;
+@use "../global" as g;
 
 .blog {
+  @include g.mq-desktop {
+    padding-block-start: u.rem(40);
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-column: 1 / -1;
+  }
+
   display: grid;
   gap: u.rem(30);
 

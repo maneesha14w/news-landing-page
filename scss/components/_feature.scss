@@ -3,8 +3,7 @@
 
 .feature {
   @include g.mq-desktop {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-area: 1 / 1 / 3 / 3;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
   }
@@ -25,6 +24,13 @@
     font-size: var(--f-xl);
     font-weight: 800;
   }
+
+  &__description {
+    p {
+      margin-block-end: u.rem(30);
+    }
+  }
+
   &__btn {
     display: inline-block;
     background-color: var(--c-red);
