@@ -19,6 +19,7 @@
   }
 
   &__headline {
+    display: inline-block;
     font-weight: 800;
     font-size: u.rem(20);
     color: var(--c-white);
