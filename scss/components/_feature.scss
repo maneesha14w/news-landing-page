@@ -1,6 +1,8 @@
 @use "../util" as u;
 
 .feature {
+  display: grid;
+  gap: u.rem(24);
   &__img {
   }
   &__heading {
@@ -17,6 +19,7 @@
     font-weight: 700;
     font-size: u.rem(14);
     text-transform: uppercase;
+    justify-self: self-start;
     cursor: pointer;
   }
 }
