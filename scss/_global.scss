@@ -22,6 +22,13 @@
   --f-xs: #{u.rem(18)};
   --f-body: #{u.rem(15)};
 }
+
+@mixin mq-desktop {
+  @media (width >= u.em(1110)) {
+    @content;
+  }
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -41,6 +48,7 @@ body {
   font-size: var(--f-body);
   color: var(--c-gray);
   background-color: var(--c-white);
+  padding-block-end: 6rem;
 }
 
 h1,
@@ -75,6 +83,11 @@ img {
 .grid {
   display: grid;
   gap: u.rem(64);
+  @include mq-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: u.rem(300) auto auto;
+    // gap: u.rem(30);
+  }
 }
 
 ul {
