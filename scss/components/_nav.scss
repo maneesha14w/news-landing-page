@@ -6,6 +6,10 @@
     background: none;
     border: none;
     padding: 0 0;
+
+    @include g.mq-desktop {
+      display: none;
+    }
   }
 
   &__open {
@@ -13,10 +17,13 @@
 
   &__content {
     @include g.mq-mobile {
+      display: none;
       position: fixed;
       inset: 0 0 0 u.rem(120);
       background-color: var(--c-white);
       padding: u.rem(30);
+      translate: 100vw 0;
+      transition: translate 500ms ease-in-out;
     }
   }
 
@@ -27,8 +34,11 @@
   }
 
   &__overlay {
+    display: none;
+    opacity: 0;
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 26, 0.5);
+    background-color: var(--c-blue);
+    transition: opacity 300ms ease-in-out;
   }
 }

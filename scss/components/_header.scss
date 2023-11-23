@@ -2,9 +2,11 @@
 @use "../global" as g;
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: u.rem(30);
+
   @include g.mq-desktop {
-    display: flex;
-    justify-content: space-between;
     padding-block: u.rem(90) u.rem(55);
   }
 
