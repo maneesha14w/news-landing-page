@@ -30,7 +30,7 @@
 }
 
 @mixin mq-mobile {
-  @media (width <= u.em(1110)) {
+  @media (width < u.em(1110)) {
     @content;
   }
 }
@@ -54,6 +54,7 @@ body {
   font-size: var(--f-body);
   color: var(--c-gray);
   background-color: var(--c-white);
+  margin-block-end: 5rem;
 }
 
 h1,
