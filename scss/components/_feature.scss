@@ -42,5 +42,9 @@
     text-transform: uppercase;
     justify-self: self-start;
     cursor: pointer;
+
+    &:hover {
+      background-color: var(--c-blue);
+    }
   }
 }

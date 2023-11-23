@@ -38,6 +38,10 @@
       color: var(--c-blue);
       font-weight: 800;
       line-height: 1.1;
+
+      &:hover {
+        color: var(--c-red);
+      }
     }
   }
 

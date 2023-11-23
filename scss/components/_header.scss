@@ -13,6 +13,10 @@
       display: flex;
       gap: u.rem(40);
     }
+
+    &:hover {
+      color: var(--c-red);
+    }
   }
 
   &__logo {
