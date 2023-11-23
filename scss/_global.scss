@@ -29,6 +29,12 @@
   }
 }
 
+@mixin mq-mobile {
+  @media (width <= u.em(1110)) {
+    @content;
+  }
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

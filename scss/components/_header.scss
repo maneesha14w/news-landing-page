@@ -9,32 +9,34 @@
   }
 
   &__links {
-    @include g.mq-desktop {
-      display: flex;
-      gap: u.rem(40);
-    }
+    display: flex;
+    gap: u.rem(40);
 
-    &:hover {
-      color: var(--c-red);
+    @include g.mq-mobile {
+      flex-direction: column;
+      gap: u.rem(24);
     }
   }
 
   &__logo {
     width: u.rem(45);
 
-    @media (width >= u.rem(1110)) {
+    @include g.mq-desktop {
       width: u.rem(65);
     }
   }
 
-  &__links {
+  &__link {
     color: var(--c-blue);
     font-size: var(--f-xs);
     line-height: 1.3;
 
     @include g.mq-desktop {
       color: var(--c-gray);
-      font-size: var(--f-body);
+
+      &:hover {
+        color: var(--c-red);
+      }
     }
   }
 }

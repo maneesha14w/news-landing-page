@@ -1,0 +1,34 @@
+@use "../util" as u;
+@use "../global" as g;
+
+.nav {
+  button {
+    background: none;
+    border: none;
+    padding: 0 0;
+  }
+
+  &__open {
+  }
+
+  &__content {
+    @include g.mq-mobile {
+      position: fixed;
+      inset: 0 0 0 u.rem(120);
+      background-color: var(--c-white);
+      padding: u.rem(30);
+    }
+  }
+
+  &__close {
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: u.rem(86);
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 26, 0.5);
+  }
+}
