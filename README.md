@@ -4,6 +4,15 @@
 News Landing Page from [frontend mentor.](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
 
 
+
+## Tech Stack
+
+**Client:** HTML, SCSS, JS
+
+**Build Tools:** Vite, Netlify CLI, Github
+
+
+
 ## Run Locally
 
 Clone the project
